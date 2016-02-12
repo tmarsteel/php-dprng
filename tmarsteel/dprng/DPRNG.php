@@ -143,6 +143,22 @@ class DPRNG
         
         return $result;
     }
+	
+	/**
+	 * Returns an array of length <code>$n</code> with each element being
+	 * a pseudo-random and uniformly distributed integer in the range 0 to 255 inclusive.
+	 * @param int $n The number of bytes to generate
+	 * @return int[]
+	 */
+	public function nextBytes($n) {
+		$ar = array();
+		for ($i = 0;$i < $n;$i++)
+		{
+			$ar []= $this->nextInt(0, 255);
+		}
+		
+		return $ar;
+	}
     
     /**
      * Advances the inner state and returns random 28 bits.
