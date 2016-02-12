@@ -1,0 +1,14 @@
+{
+    "name": "tmarsteel/dprng",
+    "description": "A deterministic pseudo-random number generator",
+    "type": "library",
+    "license": "MIT License",
+    "authors": [
+        {
+            "name": "Tobias Marstaller",
+            "email": "tobias.marstaller@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
