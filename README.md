@@ -6,7 +6,10 @@ A JavaScript implementation that generates equal sequences for the same salts/se
 
 Please contribute with your own implementation in your favourite language! A description of the algorithm and test vectors can be found in [algorithm.md](algorithm.md). I`ll cross-link compliant forks :)
 
-## Usage
+## Installation & Usage
+
+`composer require tmarsteel/php-dprng:1.*` or just download the [single class file](tmarsteel/dprng/DPRNG.php).
+
 ```php
 use tmarsteel\dprng\DPRNG;
 
