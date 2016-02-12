@@ -2,7 +2,7 @@
 
 The DPRNG is based on a simply hash / shuffling function. That hash function is used to advance the internal state of the RNG at least once for each random number request.
 
-Test-Vectors are appended to this document.
+Test-Vectors are appended to this document (appendix 2 and 3).
 
 ## Terminology / Notation
 
@@ -191,7 +191,55 @@ e1, f8, 98, 11, 69, d9, 8e, 94, 9b, 1e, 87, e9, ce, 55, 28, df,
 8c, a1, 89, 0d, bf, e6, 42, 68, 41, 99, 2d, 0f, b0, 54, bb, 16
 ```
 
-## Appendix 2: Test-Vectors
+## Appendix 2: Test-Vectors for the hasing function
+
+You can use these test-vectors to test implementations of this algorithm.
+
+|x|hash(x)|
+|0000000|41272cc|
+|0000001|b624556|
+|0000002|dac9b09|
+|0000003|1e52a71|
+|0000004|1f15188|
+|0000005|f769954|
+|0000006|2795c1b|
+|0000007|8e15341|
+|0000008|20ca154|
+|0000009|6a4872a|
+|-------|-------|
+|35cf421|ef8959c|
+|e78099f|bdfb982|
+|153f215|328d2d0|
+|aacc731|48ec45b|
+|a946843|f706acc|
+|ddc3ea4|bd4b054|
+|fdc2924|bff3bad|
+|1e33af2|d0955c8|
+|4aff8bc|af28e46|
+|09468d7|8d325dd|
+|7c778f4|5f35741|
+
+### Step-by-Step values for `0000000` 
+
+|# round|initial value|after sbox|sbox(x) * 7|(sbox(x) * 7) % FFFFFFF|
+|1|0000000|6363630|2b7b7b50|b7b7b52|
+|2|b7b7b52|a9a9d52|4a3a4d3e|a3a4d42|
+|3|a3a4d42|0a49482|4800f8e|4800f8e|
+|4|4800f8e|526341e|240b6cd2|40b6cd4|
+|5|40b6cd4|094ebd4|41272cc|41272cc|
+Output: 41272cc
+
+### Step-by-Step values for `35cf421` 
+
+|# round|initial value|after sbox|sbox(x) * 7|(sbox(x) * 7) % FFFFFFF|
+|1|35cf421|968a2c1|41dc7347|1dc734b|
+|2|1dc734b|a4c618b|4816aacd|816aad1|
+|3|816aad1|0c02951|5412137|5412137|
+|4|5412137|20c97d7|e5826e1|e5826e1|
+|5|e5826e1|d9139f1|5ef89597|ef8959c|
+Output: ef8959c
+
+## Appendix 3: Test-Vectors for the RNG
 
 You can use these test-vectors to test implementations of this algorithm. Every test vector denotes the first 20, the 40th to 50th and the 90th to 100th value of `nextInt(0, 255)` 
 
