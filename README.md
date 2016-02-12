@@ -36,13 +36,14 @@ DPRNG seeded by mcrypt_create_iv()|Windows 8.1| yet to be tested | yet to be tes
 mcrypt_create_iv()|Windows 8.1| yet to be tested | yet to be tested | yet to be tested | yet to be tested | yet to be tested |
 rand()|Windows 10| 7.998118 | 127.6669 | 99.99 | \-0.006520 | 0.55 |
 DPRNG seeded by mcrypt_create_iv()|Windows 10| 7.992490 | 127.7548 | 29.17 | 0.005192 | 0.02 |
-mcrypt_create_iv()|Windows 10| 7.993520 | 127.6631 | 86.44 | 0.010960 | 0.37 |
+mcrypt_create_iv()*|Windows 10| 7.993520 | 127.6631 | 86.44 | 0.010960 | 0.37 |
 rand()|Ubuntu 15.10| 7.992890 | 127.6763 | 56.82 | \-0.004945 | 1.15 |
 DPRNG seeded by mcrypt_create_iv()|Ubuntu 15.10| 7.993482 | 127.8451 | 84.77 | \-0.000205 | 2.43 |
-mcrypt_create_iv()
-source=/dev/urandom|Ubuntu 15.10| 7.993261 | 127.4429 | 73.70 | 0.000831 | 0.4 |
+mcrypt_create_iv()**|Ubuntu 15.10| 7.993261 | 127.4429 | 73.70 | 0.000831 | 0.4 |
 
-*You can run these tests yourself with the ent executable and the entTestfile.php script.*
+*You can run these tests yourself with the ent executable and the entTestfile.php script.*  
+*\* source = MCRYPT_DEV_RANDOM *  
+*\*\* source = MCRYPT_DEV_URANDOM *
 
 ## Methods
 Here is a full list of the methods supported by `tmarsteel\dprng\DPRNG` objects and their signatures + contracts:
