@@ -31,9 +31,6 @@ For explanations on the metrics see [the ENT Website](http://www.fourmilab.ch/ra
 
 | RNG | OS   | Entropy | Arithmetic mean | Chi-Square % | Correlation coefficient | Monte-Carlo PI error % |
 | :-- | :--- | ------: | --------------: | -----------: | ----------------------: | ---------------------: |
-rand()|Windows 8.1| yet to be tested | yet to be tested | yet to be tested | yet to be tested | yet to be tested |
-DPRNG seeded by mcrypt_create_iv()|Windows 8.1| yet to be tested | yet to be tested | yet to be tested | yet to be tested | yet to be tested |
-mcrypt_create_iv()|Windows 8.1| yet to be tested | yet to be tested | yet to be tested | yet to be tested | yet to be tested |
 rand()|Windows 10| 7.998118 | 127.6669 | 99.99 | \-0.006520 | 0.55 |
 DPRNG seeded by mcrypt_create_iv()|Windows 10| 7.992490 | 127.7548 | 29.17 | 0.005192 | 0.02 |
 mcrypt_create_iv()|Windows 10| 7.993520 | 127.6631 | 86.44 | 0.010960 | 0.37 |
