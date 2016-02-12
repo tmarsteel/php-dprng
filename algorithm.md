@@ -222,6 +222,7 @@ You can use these test-vectors to test implementations of this algorithm.
 ### Step-by-Step values for `0000000` 
 
 |# round|initial value|after sbox|sbox(x) * 7|(sbox(x) * 7) % FFFFFFF|
+|-------|-------------|----------|-----------|-----------------------|
 |1|0000000|6363630|2b7b7b50|b7b7b52|
 |2|b7b7b52|a9a9d52|4a3a4d3e|a3a4d42|
 |3|a3a4d42|0a49482|4800f8e|4800f8e|
@@ -232,6 +233,7 @@ Output: 41272cc
 ### Step-by-Step values for `35cf421` 
 
 |# round|initial value|after sbox|sbox(x) * 7|(sbox(x) * 7) % FFFFFFF|
+|-------|-------------|----------|-----------|-----------------------|
 |1|35cf421|968a2c1|41dc7347|1dc734b|
 |2|1dc734b|a4c618b|4816aacd|816aad1|
 |3|816aad1|0c02951|5412137|5412137|
