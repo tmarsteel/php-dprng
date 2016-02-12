@@ -1,8 +1,16 @@
 {
     "name": "tmarsteel/dprng",
     "description": "A deterministic pseudo-random number generator",
+	"keywords": [
+		"rng",
+		"dprng",
+		"deterministic",
+		"random",
+		"generator"
+	],
+	"homepage": "https://github.com/tmarsteel/php-dprng",
     "type": "library",
-    "license": "MIT License",
+    "license": "MIT",
     "authors": [
         {
             "name": "Tobias Marstaller",
@@ -10,5 +18,12 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+		"php": ">=5.4"
+	},
+	"autoload": {
+		"psr-0": {
+			"tmarsteel\\dprng\\": "tmarsteel/dprng/"
+		}
+	}
 }
