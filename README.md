@@ -41,7 +41,7 @@ rand()|Ubuntu 15.10| yet to be tested | yet to be tested | yet to be tested | ye
 DPRNG seeded by mcrypt_create_iv()|Ubuntu 15.10| yet to be tested | yet to be tested | yet to be tested | yet to be tested | yet to be tested |
 mcrypt_create_iv()|Ubuntu 15.10| yet to be tested | yet to be tested | yet to be tested | yet to be tested | yet to be tested |
 
-*The test-files can be found in the [ent-test directory](ent-test). You can run these tests yourself with the ent executable and the entTestfile.php script.*
+*You can run these tests yourself with the ent executable and the entTestfile.php script.*
 
 ## Methods
 Here is a full list of the methods supported by `tmarsteel\dprng\DPRNG` objects and their signatures + contracts:
