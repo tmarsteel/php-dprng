@@ -4,7 +4,7 @@ Generate deterministic pesudo-random numbers, increase the seucrity of `rand()`.
 
 A JavaScript implementation that generates equal sequences for the same salts/seeds can be found [here](//github.com/tmarsteel/jsdprng)
 
-Please contribute with your own implementation in your favourite language! A description of the algorithm can be found in [algorithm.md](algorithm.md). I`ll cross-link compliant forks :)
+Please contribute with your own implementation in your favourite language! A description of the algorithm and test vectors can be found in [algorithm.md](algorithm.md). I`ll cross-link compliant forks :)
 
 ## Usage
 ```php
