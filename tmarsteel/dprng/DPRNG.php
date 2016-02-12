@@ -78,10 +78,7 @@ class DPRNG
 	 * @return double
 	 */
 	public function next() {
-		// 51 bits for precision => generate two 28bit numbers and combine them to a 51bit integer
-		// then divide 1 by it
-			
-		$a = $this->nextInt(0, 0xFFFFFFF);
+		return ((float) $this->nextInt(0, 0xFFFFFFF)) / ((float) 0xFFFFFFF);
 	}
 	
 	/**	
@@ -95,7 +92,7 @@ class DPRNG
 	{
 		if ($max < $min)
 		{
-			return $this->nextFloat($max, $min);
+			return $this->nextDouble($max, $min);
 		}
 		
 		return $min + $this->next() * ($max - $min);
