@@ -2,7 +2,7 @@
 
 Generate deterministic pesudo-random numbers, increase the seucrity of `rand()`. This implementation is particularly helpful when deterministic random sequences are required to be consistent across multiple platforms and languages. It relys only on simple bit operations that can easily be implemented consistently across many scripting languages (e.g. JavaScript, Python, PHP, Ruby)
 
-A JavaScript implementation that generates equal sequences for the same salts/seeds can be found [here](//github.com/tmarsteel/jsdprng)
+A JavaScript implementation that generates equal sequences for the same salts/seeds can be found [here](//github.com/tmarsteel/js-dprng)
 
 Please contribute with your own implementation in your favourite language! A description of the algorithm and test vectors can be found in [algorithm.md](algorithm.md). I`ll cross-link compliant forks :)
 
