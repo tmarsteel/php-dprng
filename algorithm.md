@@ -195,7 +195,8 @@ e1, f8, 98, 11, 69, d9, 8e, 94, 9b, 1e, 87, e9, ce, 55, 28, df,
 
 You can use these test-vectors to test implementations of this algorithm.
 
-|x|hash(x)|
+|x      |hash(x)|
+|-------|-------|
 |0000000|41272cc|
 |0000001|b624556|
 |0000002|dac9b09|
@@ -228,6 +229,7 @@ You can use these test-vectors to test implementations of this algorithm.
 |3|a3a4d42|0a49482|4800f8e|4800f8e|
 |4|4800f8e|526341e|240b6cd2|40b6cd4|
 |5|40b6cd4|094ebd4|41272cc|41272cc|
+
 Output: 41272cc
 
 ### Step-by-Step values for `35cf421` 
@@ -239,6 +241,7 @@ Output: 41272cc
 |3|816aad1|0c02951|5412137|5412137|
 |4|5412137|20c97d7|e5826e1|e5826e1|
 |5|e5826e1|d9139f1|5ef89597|ef8959c|
+
 Output: ef8959c
 
 ## Appendix 3: Test-Vectors for the RNG
